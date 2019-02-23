@@ -40,4 +40,3 @@ github.com/jinzhu/gorm
 github.com/gomodule/redigo/redis
 
 -- log
-github.com/sirupsen/logrus
