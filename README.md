@@ -1,4 +1,4 @@
-<a href="https://coding13.com/"><img height="160" src="http://github.com/frankxi/league/comm/images/logo.png"></a>
+<a href="https://coding13.com/"><img height="160" src="/frankxi/league/blob/master/comm/images/logo.png?raw=true"></a>
 
 Official site: [http://www.coding13.com](http://www.coding13.com/)
 feature
