@@ -9,7 +9,6 @@ import (
 	"sync"
 	"github.com/frankxi/league/comm/setting"
 	"gitee.com/league_bak/dao"
-	"git.woda.ink/jifanfei/common/utils/DbGorm"
 )
 
 var dbPingOnce sync.Once
@@ -27,7 +26,7 @@ func Setup() {
 	// 默认打印所有gorm的sql日志
 	gGorm.LogMode(true)
 	//打印gorm的sql
-	gGorm.SetLogger(new(DbGorm.QsLogImpl))
+	//gGorm.SetLogger(new(11.QsLogImpl))
 }
 
 func GetDB() *gorm.DB {
