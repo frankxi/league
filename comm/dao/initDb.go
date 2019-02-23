@@ -8,7 +8,6 @@ import (
 	"time"
 	"sync"
 	"github.com/frankxi/league/comm/setting"
-	"gitee.com/league_bak/dao"
 )
 
 var dbPingOnce sync.Once
@@ -22,7 +21,7 @@ func Setup() {
 		return
 	}
 	//设置DB
-	dao.SetDB(gGorm)
+	SetDB(gGorm)
 	// 默认打印所有gorm的sql日志
 	gGorm.LogMode(true)
 	//打印gorm的sql
