@@ -1,0 +1,47 @@
+basePath: /v1
+definitions:
+  utils.ReturnJSON:
+    properties:
+      code:
+        type: integer
+      data:
+        type: object
+      desc:
+        type: string
+    type: object
+host: coding13.com
+info:
+  contact:
+    email: ogavaj@gmail.com
+    name: API Support
+    url: http://coding13.com/support
+  description: This is a sample server Petstore server.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://coding13.com/terms/
+  title: League
+  version: "1.0"
+paths:
+  /api/v1/auth:
+    get:
+      parameters:
+      - description: username
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/utils.ReturnJSON'
+            type: object
+      security:
+      - Bearer: []
+      summary: Print
+      tags:
+      - username  password
+swagger: "2.0"

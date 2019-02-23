@@ -1,0 +1,9 @@
+{
+  "Ip": "127.0.0.1",
+  "Port": "3306",
+  "Username": "root",
+  "Password": "root",
+  "Db": "platform",
+  "TableAndStructList": "system**System**系统,sys_menu**SysMenu**菜单",
+  "BizPath": "F:/work/go/path/src/github.com/frankxi/league/biz/sys/"
+}
