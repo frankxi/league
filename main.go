@@ -49,8 +49,8 @@ func init() {
 // @license.name Apache 2.0
 // @license.url http://www.apache.org/licenses/LICENSE-2.0.html
 
-// @host coding13.com
-// @BasePath /v1
+// @host 127.0.0.1:8000
+// @BasePath1 /v1
 func main() {
 	//crash print stack
 	defer func() {

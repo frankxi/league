@@ -1,4 +1,4 @@
-basePath: /v1
+basePath: '{{.BasePath}}'
 definitions:
   utils.ReturnJSON:
     properties:
@@ -9,7 +9,7 @@ definitions:
       desc:
         type: string
     type: object
-host: coding13.com
+host: 127.0.0.1:8000
 info:
   contact:
     email: ogavaj@gmail.com
@@ -23,12 +23,17 @@ info:
   title: League
   version: "1.0"
 paths:
-  /api/v1/auth:
+  /auth:
     get:
       parameters:
       - description: username
         in: path
-        name: name
+        name: username
+        required: true
+        type: string
+      - description: password
+        in: path
+        name: password
         required: true
         type: string
       produces:
@@ -41,7 +46,7 @@ paths:
             type: object
       security:
       - Bearer: []
-      summary: Print
+      summary: GetAuth
       tags:
       - username  password
 swagger: "2.0"

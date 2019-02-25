@@ -15,10 +15,10 @@
         },
         "version": "1.0"
     },
-    "host": "coding13.com",
-    "basePath": "/v1",
+    "host": "127.0.0.1:8000",
+    "basePath": "{{.BasePath}}",
     "paths": {
-        "/api/v1/auth": {
+        "/auth": {
             "get": {
                 "security": [
                     {
@@ -31,12 +31,19 @@
                 "tags": [
                     "username  password"
                 ],
-                "summary": "Print",
+                "summary": "GetAuth",
                 "parameters": [
                     {
                         "type": "string",
                         "description": "username",
-                        "name": "name",
+                        "name": "username",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "password",
+                        "name": "password",
                         "in": "path",
                         "required": true
                     }
