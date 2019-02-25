@@ -1,6 +1,6 @@
 basePath: '{{.BasePath}}'
 definitions:
-  utils.ReturnJSON:
+  utils.Ret:
     properties:
       code:
         type: integer
@@ -15,11 +15,11 @@ info:
     email: ogavaj@gmail.com
     name: API Support
     url: http://coding13.com/support
-  description: This is a sample server Petstore server.
+  description: League http开发文档.
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-  termsOfService: http://coding13.com/terms/
+  termsOfService: 团队介绍 http://coding13.com/terms/
   title: League
   version: "1.0"
 paths:
@@ -42,7 +42,7 @@ paths:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/utils.ReturnJSON'
+            $ref: '#/definitions/utils.Ret'
             type: object
       security:
       - Bearer: []

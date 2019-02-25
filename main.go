@@ -39,8 +39,8 @@ func init() {
 }
 // @title League
 // @version 1.0
-// @description This is a sample server Petstore server.
-// @termsOfService http://coding13.com/terms/
+// @description League http开发文档.
+// @termsOfService 团队介绍 http://coding13.com/terms/
 
 // @contact.name API Support
 // @contact.url http://coding13.com/support

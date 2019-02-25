@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type ReturnJSON struct {
+type Ret struct {
 	Code int
 	Desc string
 	Data interface{}
@@ -14,7 +14,7 @@ type ReturnJSON struct {
 //gin response method
 
 func OK(c *gin.Context, Data interface{}) {
-	ret := new(ReturnJSON)
+	ret := new(Ret)
 	ret.Code = e.OK
 	ret.Desc = ""
 	ret.Data = Data
@@ -22,7 +22,7 @@ func OK(c *gin.Context, Data interface{}) {
 }
 
 func Err(c *gin.Context, errCode int) {
-	ret := new(ReturnJSON)
+	ret := new(Ret)
 	ret.Code = errCode
 	ret.Desc = e.CodeDescMap[errCode]
 	ret.Data = ""

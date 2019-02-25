@@ -1,9 +1,9 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "This is a sample server Petstore server.",
+        "description": "League http开发文档.",
         "title": "League",
-        "termsOfService": "http://coding13.com/terms/",
+        "termsOfService": "团队介绍 http://coding13.com/terms/",
         "contact": {
             "name": "API Support",
             "url": "http://coding13.com/support",
@@ -53,7 +53,7 @@
                         "description": "OK",
                         "schema": {
                             "type": "object",
-                            "$ref": "#/definitions/utils.ReturnJSON"
+                            "$ref": "#/definitions/utils.Ret"
                         }
                     }
                 }
@@ -61,7 +61,7 @@
         }
     },
     "definitions": {
-        "utils.ReturnJSON": {
+        "utils.Ret": {
             "type": "object",
             "properties": {
                 "code": {

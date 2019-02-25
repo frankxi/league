@@ -71,7 +71,7 @@ func Setup() {
 	if runtime.GOOS == "windows" {
 		appPath = "c:\\etc\\league\\app.ini"
 	} else {
-		appPath = "/ect/league/app.ini"
+		appPath = "/etc/league/app.ini"
 	}
 	var err error
 	cfg, err = ini.Load(appPath)

@@ -31,4 +31,4 @@ Official site: [http://www.coding13.com](http://www.coding13.com)
         * — install swaggo
         * — cd ./league
         * — swag init
-        * — restart main.go 
+        * — restart main.go

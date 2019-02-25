@@ -19,7 +19,7 @@ type auth struct {
 // @Param password path string true "password"
 // @Resource username password
 // @Router /auth?name={username}&password={password} [get]
-// @Success 200 {object} utils.ReturnJSON
+// @Success 200 {object} utils.Ret
 func GetAuth(c *gin.Context) {
 
 	username := c.Query("username")
