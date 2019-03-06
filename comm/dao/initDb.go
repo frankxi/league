@@ -2,6 +2,7 @@ package dao
 
 import (
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"fmt"
 	log "github.com/sirupsen/logrus"
 	"errors"
