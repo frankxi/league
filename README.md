@@ -2,7 +2,7 @@
 
 Official site: [http://www.coding13.com](http://www.coding13.com)
 
-yyyy
+xxxx
 1. feature
     * 自动生成业务代码
     * 支持跨域
